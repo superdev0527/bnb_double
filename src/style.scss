@@ -1,0 +1,200 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+    -ms-overflow-style: none !important;
+    /* IE and Edge */
+    scrollbar-width: none !important;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+html,
+body,
+#root {
+    font-family: "Inter";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // overflow: hidden;
+    // @media(max-wdith: 1000px) {
+    //     overflow: auto;
+    // }
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    z-index: 1;
+    background-size: cover;
+    font-family: "Inter";
+    // overflow: hidden;
+    transition: all ease 0.33ms;
+    // @media(max-wdith: 1000px) {
+    //     overflow: auto;
+    // }
+}
+
+.MuiDrawer-paperAnchorDockedLeft {
+    border-right: 0 !important;
+}
+
+.ohm-card {
+    max-width: 833px;
+
+    .card-header {
+        width: 100%;
+        min-height: 33px;
+        margin-bottom: 10px;
+
+        h5 {
+            font-weight: 600 !important;
+        }
+    }
+
+    .help-text {
+        margin: 10px 0px;
+    }
+
+    .data-row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 12px 0px;
+    }
+
+    .data-row-centered {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 12px 0px;
+
+        .marginedBtn {
+            margin: 0.3rem;
+        }
+    }
+}
+
+.ohm-pairs {
+    display: flex;
+    align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+
+a:hover svg {
+    color: inherit;
+}
+
+.MuiLink-root.active {
+    color: #ffe300 !important;
+    text-decoration: underline;
+}
+
+.ReactModal__Overlay {
+    background-color: transparent !important;
+    backdrop-filter: blur(40px) !important;
+}
+
+.ReactModal__Content {
+    border: none !important;
+    background: rgba(41, 41, 41, 0.8) !important;
+    box-shadow: 10px 15px 40px rgb(20, 20, 20) !important;
+}
+
+.ReactModalPortal {
+    position: relative;
+    z-index: 10;
+}
+
+.MuiSkeleton-root {
+    background-color: rgba(150, 150, 150, 0.3) !important;
+}
+
+.highcharts-label>text {
+    fill: #1fc7d4 !important;
+}
+
+#WEB3_CONNECT_MODAL_ID {
+    position: relative;
+    z-index: 1000;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #05d4f6b2;
+    }
+}
+
+.web3modal-modal-card {
+    background-color: rgb(44, 48, 56) !important;
+    display: block !important;
+    max-width: 420px !important;
+    padding: 15px 0 !important;
+}
+
+.web3modal-provider-wrapper {
+    padding: 5px 1rem !important;
+    border: none !important;
+
+}
+
+.web3modal-provider-container {
+    flex-direction: row-reverse !important;
+    padding: 1rem !important;
+    background-color: rgb(76, 80, 86) !important;
+    justify-content: space-between !important;
+    border: 1px solid #4c5056 !important;
+}
+
+.web3modal-provider-container:hover {
+    border: 1px solid rgb(33, 114, 229) !important;
+}
+
+.web3modal-provider-description {
+    display: none !important;
+}
+
+.web3modal-provider-name {
+    margin-top: 0 !important;
+    color: white !important;
+    width: fit-content !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    min-width: 165px;
+    text-align: left;
+}
+
+.web3modal-provider-icon {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.MuiDialog-container>div {
+    background: transparent !important;
+    box-shadow: unset !important;
+}
+
+.MuiDialog-paper {
+    margin: 0 !important;
+}
+
+.MuiDialog-paperWidthSm {
+    max-width: none !important;
+}
